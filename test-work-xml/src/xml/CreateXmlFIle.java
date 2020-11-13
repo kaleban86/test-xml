@@ -44,7 +44,7 @@ public class CreateXmlFIle {
         Transformer transformer = transformerFactory.newTransformer();
         DOMSource source = new DOMSource(document);
 
-        StreamResult result = new StreamResult(new File("C:\\1.xml"));
+        StreamResult result = new StreamResult(new File("D:\\1.xml"));
         transformer.transform(source, result);
 
         System.out.println("File created successfully");

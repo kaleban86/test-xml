@@ -17,13 +17,13 @@ public class Main  {
         CreateFIleCsv createFIleCsv = new CreateFIleCsv();
         long time = System.currentTimeMillis();
 
-        dao.setPassword("password");
-        dao.setUser("user");
+        dao.setPassword("530433");
+        dao.setUser("root");
         dao.setUrl("jdbc:mysql://localhost:3306/xml");
-        dao.updateDelete();
+      //  dao.updateDelete();
         createFIleCsv.setN(5);
         createFIleCsv.addN();
-        dao.saveFile();
+      //  dao.saveFile();
         dao.selectN();
 
 
