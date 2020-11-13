@@ -20,10 +20,11 @@ public class Main  {
         dao.setPassword("530433");
         dao.setUser("root");
         dao.setUrl("jdbc:mysql://localhost:3306/xml");
-      //  dao.updateDelete();
+        dao.updateDelete();
         createFIleCsv.setN(5);
         createFIleCsv.addN();
       //  dao.saveFile();
+        dao.save(5);
         dao.selectN();
 
 

@@ -11,5 +11,7 @@ public interface Dao {
     public  boolean updateDelete() throws SQLException;
     public  boolean saveFile() throws SQLException;
     public boolean selectN() throws SQLException, TransformerException, ParserConfigurationException, FileNotFoundException;
+    public boolean save(int num);
+
 
 }

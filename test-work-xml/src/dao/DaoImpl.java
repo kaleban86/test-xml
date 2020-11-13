@@ -97,6 +97,26 @@ public class DaoImpl extends ConnectionDb implements Dao {
 
     }
 
+    @Override
+    public boolean save(int num){
+
+        try (Connection c = getConnection()) {
+            String sql = "INSERT INTO test (field) values (?)";
+            PreparedStatement ps = c.prepareStatement(sql);
+            ps.setInt(1, num);
+
+            ps.execute();
+        } catch (Exception ex) {
+            throw new RuntimeException(ex);
+
+        }
+
+
+        return true;
+    }
+
+
+
 
     @Override
     public Connection getConnection()throws SQLException {
